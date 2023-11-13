@@ -1,0 +1,6 @@
+// 변수선언
+$colors: red, green, blue;  // 쉼표로 구분해서 배열처럼 입력 (대괄호는 생략)
+
+h1:nth-child(1){ color: nth($colors, 1); }   // nth라는 함수를 사용 color: nth($변수명, 인덱스)
+h1:nth-child(2){ color: nth($colors, 2); }  
+h1:nth-child(3){ color: nth($colors, 3); }  

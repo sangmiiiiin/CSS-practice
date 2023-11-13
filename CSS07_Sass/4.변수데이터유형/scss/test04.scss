@@ -1,0 +1,15 @@
+// 변수선언
+$line01: underline;
+$line02: line-through;
+$font01: 'G마켓 산스 TTF', sans-serif; //  공백이나, 한글이 들어가면 따옴표를 사용
+$url01: 'http://placehold.it/200x100';  // url에도 따옴표
+
+
+// 적용
+h1:nth-child(1){ text-decoration: $line01; }
+h1:nth-child(2){ text-decoration: $line02; }
+h1:nth-child(3){ font-family: $font01; }
+h1:nth-child(4){ 
+    width: 200px; height: 100px;
+    background-image: url($url01);
+ }

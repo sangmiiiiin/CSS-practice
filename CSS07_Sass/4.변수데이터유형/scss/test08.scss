@@ -1,0 +1,14 @@
+// 변수선언
+
+$weight: (
+    'regular': 400,
+    'medium': 500,
+    'bold': 600,
+);
+
+// h1:nth-child(1){font-weight: $weight;} 안됨, 객체 전체를 불러 올순 없음
+
+h1:nth-child(1){ font-weight: map-get($weight, 'regular'); }  // map-get 함수 사용 map-get($변수명, 'key');
+h1:nth-child(2){ font-weight: map-get($weight, 'medium'); }
+h1:nth-child(3){ font-weight: map-get($weight, 'bold'); }
+
