@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* 헤더 구역 */
+header {
+  width: 500px;
+  border: 3px solid black;
+}
