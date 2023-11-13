@@ -1,0 +1,13 @@
+// 전역변수
+$myColor: red;
+
+h1{
+    // 지역변수
+    $titleColor: green !global; // 지역변수를 전역변수로 사용가능  
+    color: $titleColor;
+}
+
+p{
+    color: $myColor;
+    color: $titleColor; 
+}
