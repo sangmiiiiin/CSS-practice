@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>속성 선택자 </title> <!--속성임 속성 태그 안에 속성!!!-->
+	<style>
+		span[id ^="complex"]{ /*span 속성에 id에 시작하는 문자가 complex인 값의 스타일 변경*/
+			color:blue
+		}
+
+		span[id $="text1"]{
+			font-size: 25px;
+		}/*끝 문자*/
+
+		span[id *="text"]{
+			background-color: yellow;
+		}
+
+		input[type]{
+			color: orange;
+		}
+
+		input[type="text"]{ /* =는 이 단어가 포함되어있다면 가능 */
+			font-size: 20px;
+		}
+
+		span[id~="simpletext1"]{ /* ~=는 정확하게 단어가 일치해야 값이 나온다 */
+			color: red;
+		}
+		/*모든 태그에는 id와 class를 사용할 수 있다*/
+	</style>
+</head>
+<body>
+	<span id="simpletext1">simpletext1</span>
+	<span id="simpletext2">simpletext2</span>
+	<span id="complextext1">complextext1</span>
+	<span id="complextext2">complextext2</span>
+	<span id="complex">complex</span>
+	<br/><br/>
+
+	<form>
+		<label>이름</label>
+		<input type="text"/><br/>
+		
+		<label>아이디</label>
+		<input type="text"/><br/>
+		
+		<label>비밀번호</label>
+		<input type="password"/><br/>
+		
+		<label>전화번호</label>
+		<input type="tel"/><br/>
+	</form>
+	<br/>
+	
+	<img width="200" height="100" src="" alt="이미지 준비중입니다."/>
+	<br/>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            border: 0px solid red;
+            width: 600px;
+            height: 250px;
+            margin: 100px auto;
+
+            position: relative;
+        }
+
+        .circle{
+            width: 245px;
+            height: 246px;
+
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .circle:nth-child(1){
+            background-color: #f60;
+            left: 100px;
+        }
+        .circle:nth-child(2){
+            background-color: #00ff04;
+            left: 200px;
+        }
+        .circle:nth-child(3){
+            background-color: #fedd15;
+            left: 300px;
+        }
+
+        #badge{
+            background-color: blue;
+            width: 100px;
+            height: 50px;
+            color: white;
+
+            padding-top: 10px;
+            padding-left: 10px; /*padding은 지정한 px만큼 늘어난다 - 사용시 주의*/
+            
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+
+        <div id="badge">
+            Ex - <br>
+            Multicampus
+        </div>
+    </div>
+</body>
+</html>

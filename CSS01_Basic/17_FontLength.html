@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 18px;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가변길이</title>
+    <style>
+        h1{ /*font-size: 16px*/
+            /*font-size: 1em;   16*1=16*/
+            /*font-size: 2em;     16*2=32*/
+            font-size: 1.5em;
+        }
+
+        .outer{
+            font-size: 24px; /*부모 24*2=48*/
+            color: blue;
+        }
+
+        .inner{
+            font-size: 2em;
+        }
+
+        .inside{
+            color: green;
+            font-size: 2rem;   /*루트(HTML)태그(요소) HTML 폰트 디폴트값은 16px 18*2=36*/
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Architecto nobis molestias quos dicta, libero temporibus quibusdam
+        voluptatum dolores praesentium placeat accusantium cum ea sed inventore. 
+        Recusandae doloribus voluptas esse maxime!
+    </h1>
+
+    <div class="outer">
+        <div class="inner">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laborum porro optio, odit autem culpa quia sequi incidunt odio 
+            dignissimos beatae consequuntur nulla totam reprehenderit! Nemo at ducimus neque amet deserunt!
+        </div>
+    </div><br/>
+
+    <div class="outer">
+        <div class="inside">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+           Voluptatem a nulla cumque illo quam esse officiis porro? 
+           Sit sint dolor totam error suscipit aut nemo. Quos sapiente eum et veniam.
+        </div>
+    </div>
+
+    <!--div*10 or .class*10 하면 <div class="class"><div> 됨
+        Lorem*5 하면 5줄 만들어줌-->
+    </body>
+</html>

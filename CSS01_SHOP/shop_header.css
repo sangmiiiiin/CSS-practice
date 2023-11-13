@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    width: 100%;
+    border: 0px solid red;
+}
+
+header > #gnb{
+    width: 100%;
+    background-color: #353535;
+}
+
+header > #gnb > ul{
+    width: 1000px;
+    height: 30px;
+    border: 0px solid green;
+    margin: 0px auto;
+}
+
+header > #gnb > ul > li{/*바로위에 부모가 height값이 없을때 overflow: hidden써야하지만 지금은 있음*/
+    float: left;
+    margin-left: 50px;
+}
+
+header > #gnb a{
+    color: white;
+}
+
+header > #logo{
+    width: 200px;
+    height: 100px;
+    border: 1px solid #ccc;
+    margin: 70px auto;
+    text-align: center;
+    line-height: 100px;
+}
+
+header > #hit_menu > ul{
+    width: 1000px;
+    border: 0px solid green;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+header > #hit_menu li{
+    width: 100px;
+    height: 45px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 45px;
+    float: right;
+    border-right-width: 0px;
+}
+
+header > #hit_menu li:nth-child(1){
+    border-right-width: 1px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+header > #hit_menu li:nth-child(4){
+    border-radius: 10px 0px 0px 10px;
+}
+
+header > #hit_menu a{
+    color: #282828;
+    font-size: 1.1em;
+}
+
+header > #lnb{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    border-top-style: dashed;
+}   
+
+header > #lnb > ul{
+    border: 0px solid blue;
+    width: 1000px; /*계속 변경하면서 알맞은 넓이 찾기*/
+    height: 50px;
+    margin: 0px auto;
+}
+
+header > #lnb li{
+    float: left;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+}
+
+header > #lnb a{
+    color: #282828;
+    font-size: 1.1em;
+
+}
+

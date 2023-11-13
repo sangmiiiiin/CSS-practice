@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items{
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        .items:nth-child(2n-1){
+            background-color: #bbb;
+        }
+
+        #wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /*repeat(3, 1fr)*/
+            /* grid-template-rows: 2fr 1fr; */
+
+            /*최소 줄 높이를 최소값을 지정 후 내용이 많아지면 자동으로 맞춘다*/
+            grid-template-rows: minmax(400px, auto);
+            
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet</div>
+    </div>
+</body>
+</html>

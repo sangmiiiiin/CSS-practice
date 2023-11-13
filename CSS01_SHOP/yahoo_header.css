@@ -1,0 +1,82 @@
+body{margin: 0px;}
+li{list-style-type: none;}
+
+header{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+header > #header_nav{
+    width: 100%;
+    border: 0px solid red;
+    background-color: #2d1152;
+    overflow: hidden;
+}
+
+header > #header_info{
+    border: 1px solid blue;
+}
+
+header > #header_nav > .list{
+    height: 50px;
+    float: left;
+}
+
+header > #header_nav > .firefox{
+    height: 50px;
+    float: right;
+    color: white;
+    border: 0px solid red;
+    line-height: 50px;
+}
+
+header > #header_nav > .list li{
+    color: white;
+    float: left;
+    margin-right: 20px;
+    font-size: 0.9em;
+    line-height: 30px;
+    border: 0px solid red;
+}
+
+header > #header_info{
+    border: 0px solid green;
+    width: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+
+header > #header_info div{
+    margin-top: 10px;
+    float: left;
+    border: 0px solid red;
+}
+
+header > #header_info img{
+    width: 120px;
+    height: 32px;
+}
+
+header > #header_info > .search > input[type="text"]{
+    width: 400px; font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid #3488d9;
+}
+
+header > #header_info > .search > input[type="button"]{
+    width: 124px;
+    height: 35px;
+    background-image: url(./search_img.png);
+    font-size: 1.2em;
+    color: #fff;
+}
+
+header > #header_info .service{
+    height: 35px;
+}
+
+header > #header_info .service li{
+    float: left;
+    margin-right: 15px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID 선택자</title>
+<style>
+
+/*id 선택자는 앞에 # 붙이고 id지정* 통상적으로 
+자바스크립트로 넘어가면 id 가 2개 이상이면 오류가 날 수 있기 때문에
+ 통상적으로 블록 구분의 시작점에 들어간다*/
+
+	#school{
+		font-family: 궁서체;
+	}
+
+	#student_01{
+		color:red;
+		font-size: 20px;
+		text-decoration: underline;
+	}
+
+	#student_02{
+		color: blue;
+		font-size: 20px;
+		text-decoration: overline;
+	}
+	
+</style>
+</head>
+<body>
+    <div id="school">
+		<div id="student_01">   
+			<dl><!--dl,dt 들여쓰기 개념-->
+				<dt>이름</dt>
+				<dd>조인성</dd>
+			</dl>
+			
+			<dl>
+				<dt>학과</dt>
+				<dd>전자과</dd>
+			</dl>
+		</div>
+		
+		<div id="student_02">
+			<dl>
+				<dt>이름</dt>
+				<dd>김태희</dd>
+			</dl>
+			
+			<dl>
+				<dt>학과</dt>
+				<dd>전자과</dd>
+			</dl>
+		</div>
+	</div>
+</body>
+</html>

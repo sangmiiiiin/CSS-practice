@@ -1,0 +1,46 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas: 
+    'a a'
+    'b c'
+    'd d ';
+}
+
+.header,
+main,
+aside,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+    grid-area: a;
+    background-color: black;
+    color: white;
+    line-height: 100px;
+}
+
+.main {
+    grid-area: b;
+}
+
+.aside{
+    grid-area: c;
+    background-color: orange;
+}
+
+.footer{
+    grid-area: d;
+    background-color: black;
+    line-height: 50px;
+    color: white;
+}
+
+

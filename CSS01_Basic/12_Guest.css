@@ -1,0 +1,33 @@
+           /*스타일이 길어지면 외부 스타일로 빼줘야함*/
+		h2{/*마진 오토는 정말 많이 씀*/
+			border: solid 0px red;
+			width: 410px;
+			height: 50px;
+			margin: 50px auto;
+			text-align: center;
+			line-height: 50px;
+			letter-spacing: 30px;
+			text-shadow: 5px -5px 3px rgb(0, 204, 255);
+		}
+
+		#form_style{
+			border: solid 0px blue;
+			width: 500px;
+			height: 180px;
+
+			margin: 0px auto;
+		}
+		#form_style > .title{
+			border: solid 0px green;
+			width: 410px;
+			height: 30px;
+			margin: 2px 0px auto;
+			text-align: center;
+		}
+		
+		#form_style > .content{
+			border: solid 0px pink;
+			width: 480px;
+			height: 100px;
+			margin: 2px 0px auto;
+		}

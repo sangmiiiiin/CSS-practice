@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{font-size: 24px;}
+
+        #wrapper1{
+            display: grid;
+            /*200px 200px 200px = 1fr 1fr 1fr = repeat(3, 1fr)*/
+            /*화면을 꽉 채울만큼 너비가 늘려서 표시*/
+            grid-template-columns: repeat(Auto-fit, minmax(200px, 1fr));
+        }
+
+        #wrapper2{
+            display: grid;
+            /*컬럼 최소 너비만큼 채워서 표시*/
+            grid-template-columns: repeat(Auto-fill, minmax(200px, 1fr));
+        }
+
+        .items{
+            background-color: #eee;
+            padding: 15px;
+        }
+
+        .items:nth-child(2n-1){
+            background-color: #bbb;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Auto-fit 일때</h1>
+    <div id="wrapper1">
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet</div>
+    </div>
+
+    <h1>Auto-fill 일때</h1>
+    <div id="wrapper2">
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor </div>
+        <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet</div>
+    </div>
+</body>
+</html>

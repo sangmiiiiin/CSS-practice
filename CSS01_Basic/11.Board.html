@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>선긋기</title>
+	<style>
+		body{
+			margin-top: 0px;
+			margin-left: 0px;
+		}
+		div{
+			border: solid 1px red;
+			width: 500px;
+			height: 60px;
+			margin-top: 10px;
+		}
+
+		#hangul > label{/*패딩을 쓰먄 박스와 글자의 간격도 바뀜 주의*/
+			border: solid 2px blue;
+			width: 300px;
+			height: 30px;
+			display: block;
+			margin-top: 20px;
+			margin-left: 25px;
+
+			text-align: center;
+			line-height: 30px;
+		}
+	</style>
+</head>
+
+<body><!--텍스트는 마진값을 줄수 없음, 태그만 마진 패딩 가능-->
+	<div id="hangul">	
+		<label>가</label>
+	</div>
+</body>
+</html>

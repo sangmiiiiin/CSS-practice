@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>선긋기</title>
+	<style>
+		#menu{ /*큰 블록(바깥 테두리)*/
+			border-style: dotted;
+			height: 50px;
+			width: 500px;
+		}
+		
+		#menu > div{ /*작은 블록(안쪽 테두리)*/
+			border-style: solid;
+			border-width: 1px;
+			border-color: red;
+			width: 120px;
+			height: 40px;
+
+			text-align: center;
+			line-height: 40px;
+			float: left;
+
+			border-left-width: 0px;
+		}
+
+		#alphabet > span{
+			border-style: solid;
+			width: 120px;
+			height: 30px;
+			border-width: 1px;
+
+			display: block;
+			text-align: center;
+			line-height: 30px;
+			float: left;
+
+			border-right-width: 0px;
+		}
+
+		#num > label{
+			border-style: solid;
+			border-width: 1px;
+			width: 120px;
+			height: 40px;
+			display: block;
+
+			text-align: center;
+			line-height: 40px;
+			
+			border-bottom-width: 0px;
+		}
+
+		#site a{
+			/*border-style: solid;
+			border-width: 1px;
+			border-color: brown;*/
+
+			border: 1px solid brown;
+			width: 100px;
+			height: 20px;
+
+			display: block;
+			text-align: center;
+			line-height: 20px;
+
+			border-top-width: 0px;
+			text-decoration: none;
+		}
+		/*
+		a태그는 4가지의 속성을 따로 줄 수 있다.
+		아직 방문하지 않았음
+		마우스를 올려 놨을때
+		한번 이상 방문 했을때
+		마우스를 클릭하는 순간<--잘 안씀
+		*/
+		#site > a:hover{ /*마우스 올려놨을때*/
+			color: red;
+		}
+		
+		#site > a:link{ /*아직 방문하지 않았을때*/
+			color: green;
+		}
+
+		#site > a:visited{ /*한번 이상 방문 했을때*/
+			color: blue;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="menu">
+		<div style="border-left-width: 1px;">뉴스</div>
+		<div>까페</div>
+		<div>블로그</div>
+		<div>메일</div>
+	</div><br/><br/><br><!--br은 나중에 마진값으로 바뀜-->
+	
+	<div id="alphabet">
+		<span>A</span>
+		<span style="border-right-width: 1px;">B</span>
+	</div><br/><br/>
+	
+	<div id="num">
+		<label>1</label>
+		<label>2</label>
+		<label style="border-bottom-width: 1px;">3</label>
+	</div><br/><br/>
+	
+	<div id="site">
+		<a href="http://www.naver.com" style="border-top-width: 1px;">네이버</a>
+		<a href="http://www.google.co.kr">구글</a>
+		<a href="http://www.daum.net">다음</a>
+	</div>
+</body>
+</html>

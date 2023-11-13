@@ -1,0 +1,17 @@
+footer > #footer_menu,
+         #company_info{
+    border: 0px solid #bb8832;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(57, 23, 23);
+    color: rgb(192, 174, 141);
+
+}
+
+footer ul{
+    margin: 50px;
+}
+
+footer .law > a{
+    color: rgb(192, 174, 141);
+}

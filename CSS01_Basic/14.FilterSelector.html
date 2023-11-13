@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>가상클래스선택자 - 문자 블록 </title>
+	<style>
+		#wrap{
+			border: solid 0px red;
+			width: 800px;
+			margin: 0px auto;
+		}
+
+		#header{
+			border: solid 0px blue;
+			width: 800px;
+			border-bottom: solid 3px #ccc;
+		}
+
+		#content{
+			border: solid 0px green;
+			width: 800px;
+		}
+		
+		#content > p:nth-child(2)::first-letter,/*문자블록은 ::으로 해야 적용 가능*/
+		#content > p:nth-child(3)::first-letter{
+			font-size: 32px;
+		}
+
+		#content > p:nth-child(2)::first-line,
+		#content > p:nth-child(3)::first-line{
+			color: blue;
+			font-weight: bold;
+		}
+		
+		#content > p:nth-child(1)::selection{
+			background-color: olive;
+			color: red;
+		}
+
+		#footer{
+			border: solid 0px #ff04bf;
+			width: 800px;
+		}
+
+		#footer > ul{
+			border: solid 1px #ccc;
+			height: 100px;
+		}
+
+		#footer li{
+			list-style-type: none;
+			margin: 3px;
+		}
+
+		#footer img{
+			width: 95px;
+			height: 95px;
+			float: left;
+		}
+	</style>
+	</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>설립개요</h1>
+		</div>
+		
+		<div id="content">
+			<p><!--p태그는 문단(텍스트)나눌때 쓰인다-->
+				중소기업 지원업무의 전문성과 효율성을 확보하고 중소기업에 대한 기술,
+				경영, 인력등의 종합지원체계를 구축함으로써 중소기업의 경쟁력 제고를 위해 설립된
+				진흥원은 종소기업의 자생력을 키우고 안정적인 경영여건을 조성하기 위하여 끊임없이 노력하고 있습니다.
+			</p>
+			<p>
+				2014년 4월 9일 <br/> 진흥원 사명변경 6월3일 판교 이전
+			</p>
+			<p>
+				2013년 1월 12일 <br/> 다누리 시민청 개관 5월 9일 꿈꾸는 청년가게 명동점 개관 5월 10일 큐비드 광화문 개관
+				6월 21일 다누리 강남점 개관 7월 20일 서울크리에티브랩 개관 6월27일 다누리 성북점 개관
+			</p>
+		</div>
+		
+		<div id="footer">
+			<ul><!--li 태그는 줄 바꿈이 되고 img태그는 줄 바꿈이 안됨-->
+				<li><img src="data:image/png;base64,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"></li>
+				<li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAA0CAMAAACHK1d6AAAAh1BMVEXx8fEAAAD09PT4+Pj////u7u77+/vp6enQ0NDa2trl5OSfnp6tra2+vr67urrX19eZmJiNjIxkYmHHx8eSkpKop6d3dXW0s7NHRERUUVCEg4MWEA7z+/3vyL/nSwDv1c/vsKDlHwDuwLVYWFj16ugiHx43NTRsa2srKCgeFxUQAgBAPTwZGRklF435AAACJElEQVRYhe2X646bMBCFfWYMNg5ggpNwSe9pyG3f//k6TrLpVv1FpU3Vyp80jIWPdOxhHIJSiWeRkaKIDOM1U9fhu0NVFYItrHehLmwInfX2GcZkvbe2Fuvob4NY++ds+IZ7HdBz6pxIJBKJfxnK7/nDU18a1O2MYlb08dPn9zWme9zgBi5fbYi/fP1Gjwn6TfrrK3T+CkkVJqfCsMpcJhF9abc1xnwnxVmRsXpNRFepi0N2jkkZo2Kwu87Psg17YDUBY16h4xp+geyASE+yBqBkXktaMNkjsOyBDZMZgMHpfc+0H/QGOFfztszH07rFdn1AFcS3ir6murw0iwG2w67sEQL6cocqv5xFdl5v0OkLmgaTPg5MU+sx2n7KZ223QKMNlhKrh6/T7Z7zAD/smcmbw1mxRpuJjDBqhdFhobUIp+i7U5jGSs8rcyEFNGgkVha1vtbZ5YcXliUUsgnKtW5PTBpDJjLCkrPzpkCZ56UI+pyPrTZNi2nWA37rq9DaHYz48goNVbALKeABdYeNHV99x5vvqa5OW3mwdSkLPnbSEmaWr795cqz1Stqnkasjc4GrEDg22Mg8XtssylT0hfhugZPlQtLRsDSZNNusQmfWkboH+6pgcjZ+R9jMWDkg8Y40X1E770WibtLCo7RBjiBlISa2V9ks6G3Q44eB3t65f938lFk5Xbdz85ifaftHkJ/qv/KPn/TcsiYSiUQikUj8d/wAQuodQ5lrIigAAAAASUVORK5CYII="></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
