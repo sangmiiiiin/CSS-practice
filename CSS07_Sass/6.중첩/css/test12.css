@@ -1,0 +1,16 @@
+.header {
+  width: 500px;
+  padding: 10px;
+  border: 3px solid black;
+}
+.header a {
+  color: #000;
+  text-decoration: none;
+}
+.gnb ul {
+  list-style: none;
+  display: flex;
+}
+.gnb li {
+  margin: 0 10px;
+}

@@ -1,0 +1,10 @@
+h1{
+    &::after{ content: ' 텍스트'}
+
+    a{
+        color: black; text-decoration: none;
+        &:hover{
+            color: blue; text-decoration: underline;
+        }
+    }
+}
