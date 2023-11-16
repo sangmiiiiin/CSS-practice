@@ -1,0 +1,35 @@
+.btn1 {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: navy;
+}
+
+.btn2 {
+  width: 130px;
+  height: 40px;
+  border: 3px solid navy;
+  border-radius: 20px;
+  color: navy;
+  background-color: white;
+}
+
+.btn3 {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #333;
+}
+
+.btn4 {
+  width: 100px;
+  height: 40px;
+  border: 3px solid red;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #333;
+}

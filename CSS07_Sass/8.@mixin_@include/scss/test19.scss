@@ -1,0 +1,21 @@
+@mixin btn($w: 100px, $bgc: #333, $b: none, $c: #fff) {
+    width: $w; height: 40px;
+    border: $b; border-radius: 20px;
+    color: $c; background-color: $bgc;
+}
+
+.btn1 {
+    @include btn(100px, navy, none, #fff);
+}
+
+.btn2 {
+    @include btn(130px, white, 3px solid navy, navy);
+}
+
+.btn3 {
+    @include btn();
+}
+
+.btn4 {
+    @include btn(100px, #333, 3px solid red);
+}

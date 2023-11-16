@@ -1,0 +1,30 @@
+.btn1 {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #333;
+  background-color: red;
+}
+
+.btn2 {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #333;
+  background-color: green;
+}
+
+.box {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #333;
+  text-align: center;
+  line-height: 40px;
+}

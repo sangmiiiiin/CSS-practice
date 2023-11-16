@@ -1,0 +1,29 @@
+button { display: block; }
+@mixin solidBtn {   // 버튼관련
+    width: 100px; height: 40px;
+    border: none; border-radius: 20px;
+    color: #fff; background-color: #333;
+}
+
+@mixin positionCenter { // 위치관련
+    margin: 20px auto;
+}
+
+@mixin solidCenterBtn {
+    @include solidBtn;
+    @include positionCenter;
+}
+
+.btn1 {
+    @include solidBtn;
+}
+
+.btn2 {
+    @include solidCenterBtn;
+}
+
+.box { 
+    width: 100px; height: 100px;
+    background-color: lightblue;
+    @include positionCenter;
+}

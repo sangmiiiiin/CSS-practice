@@ -1,0 +1,21 @@
+@mixin solidBtn {
+    width: 100px; height: 40px;
+    border: none; border-radius: 20px;
+    color: #fff; background-color: #333;
+}
+
+.btn1{
+    @include solidBtn;
+    background-color: red;
+}
+
+.btn2{
+    @include solidBtn;
+    background-color: green;
+}
+
+.box{
+    @include solidBtn;
+    text-align: center;
+    line-height: 40px;
+}
