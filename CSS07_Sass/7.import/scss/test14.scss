@@ -1,0 +1,5 @@
+@import "contents.css"; // 확장자를 무시한다는건 같은 확장자일때! 이 파일은 scss기 때문에 content.css로 붙여줘야함
+@import 'https://fonts.googleapis.com/css2?family=Jua&display=swap'; // 실제 url은 url 함수로 랩핑안해도 ok
+@import url(contents); // url 함수에는 확장자 쓰지 않아도 ok
+@import url("contents");    // 큰따옴표 써도 ok
+@import "contents" screen;  // 미디어 쿼리 관련 키워드도 컴파일 가능

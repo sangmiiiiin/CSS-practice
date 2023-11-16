@@ -1,0 +1,5 @@
+@import "contents.css";
+@import 'https://fonts.googleapis.com/css2?family=Jua&display=swap';
+@import url(contents);
+@import url("contents");
+@import "contents" screen;
